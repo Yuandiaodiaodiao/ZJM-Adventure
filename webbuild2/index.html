@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+      <script>
+          function Reset()
+          {
+              var canvas = document.getElementById("#canvas");
+              canvas.height=  document.documentElement.clientHeight;
+              canvas.width =  document.documentElement.clientWidth;
+      
+          }
+      </script>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | ZJMadventure</title>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/webbuild2.json");
+    </script>
+  </head>
+
+<script type="text/javascript">
+window.alert("游戏版本1.1横屏以获得最佳游戏体验");
+//window.confirm("此为确认框，请单击“确定”或“取消”。");
+//window.prompt("此为提示框，请输入数据");
+</script>
+  <body onresize="Reset()" ,scroll= no, style="overflow:hidden">  
+      <div id="gameContainer" style="width: 100%; height: 100%;margin:auto" ></div>        
+  </body>
+
+</html>
