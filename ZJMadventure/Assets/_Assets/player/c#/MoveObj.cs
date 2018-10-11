@@ -58,6 +58,14 @@ public class MoveObj : MonoBehaviour {
 			ifjump = false;
 
 			v.y=jumpspeed;
+        if (ifground())
+            jumptimes = 0;
+		if (ifjump) {
+            if(!ifground())
+    			jumptimes++;
+            ifjump = false;
+            if(jumptimes <= 1)
+    			v.y=jumpspeed;
 
 		}
 		movex=CrossPlatformInputManager.GetAxis("Horizontal");
