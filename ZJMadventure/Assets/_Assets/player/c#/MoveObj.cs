@@ -51,13 +51,6 @@ public class MoveObj : MonoBehaviour {
 	void movec(){
 		
 		Vector2 v = rig2d.velocity;
-		if (ifground())
-			jumptimes = 0;
-		if (ifjump&&jumptimes<=1) {
-			jumptimes++;
-			ifjump = false;
-
-			v.y=jumpspeed;
         if (ifground())
             jumptimes = 0;
 		if (ifjump) {
@@ -75,15 +68,15 @@ public class MoveObj : MonoBehaviour {
 		else transform.localScale =new Vector3 (1, 1, 1);
 			v.x = speed * movex;
 		//rig2d.velocity = new Vector2 (speed*movex, rig2d.velocity.y);
-		if (ifknock ()) {
+		if (ifknock ()) {/*
 			if (turns1 == 10) {
 				turns1 = 0;
-			} else {
+			} else {*/
 				turns1++;
 				//Debug.Log ("speed--");
 				v.x = rig2d.velocity.x;
 				//rig2d.velocity = new Vector2 (rig2d.velocity.x, rig2d.velocity.y - knockg);}
-			}}
+			}
         //
 		rig2d.velocity = v;
 	}
@@ -92,10 +85,11 @@ public class MoveObj : MonoBehaviour {
 		return GetComponentInChildren<knocktest> ().onknock;
 	}
 	bool ifground(){
-		RaycastHit2D ray = Physics2D.Raycast (transform.position, -transform.up, playerheight, walllayer);
-		Debug.DrawLine (transform.position, transform.position + new Vector3 (0f, -playerheight, 0f), Color.red);
-		if (ray.collider != null)
-			return true;
-		return false;
+        /*	RaycastHit2D ray = Physics2D.Raycast (transform.position, -transform.up, playerheight, walllayer);
+            Debug.DrawLine (transform.position, transform.position + new Vector3 (0f, -playerheight, 0f), Color.red);
+            if (ray.collider != null)
+                return true;
+            return false;*/
+        return GetComponentInChildren<Groudtest>().is_onground;
 	}
 }
