@@ -76,8 +76,10 @@ public class MoveObj : MonoBehaviour {
 				v.x = rig2d.velocity.x;
 				//rig2d.velocity = new Vector2 (rig2d.velocity.x, rig2d.velocity.y - knockg);}
 			}}
+        //
 		rig2d.velocity = v;
 	}
+
 	bool ifknock(){
 		return GetComponentInChildren<knocktest> ().onknock;
 	}
