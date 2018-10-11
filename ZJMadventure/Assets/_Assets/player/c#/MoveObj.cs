@@ -78,6 +78,7 @@ public class MoveObj : MonoBehaviour {
 			}}
 		rig2d.velocity = v;
 	}
+
 	bool ifknock(){
 		return GetComponentInChildren<knocktest> ().onknock;
 	}
