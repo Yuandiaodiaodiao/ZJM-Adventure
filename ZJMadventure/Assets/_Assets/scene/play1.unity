@@ -579,6 +579,60 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87ea3b1a19492d24a99270bac7caaf7d, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &1026966248
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4491449188379770, guid: 31039f486fadca548a1833910c4178b5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491449188379770, guid: 31039f486fadca548a1833910c4178b5, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491449188379770, guid: 31039f486fadca548a1833910c4178b5, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.13085938
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491449188379770, guid: 31039f486fadca548a1833910c4178b5, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491449188379770, guid: 31039f486fadca548a1833910c4178b5, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491449188379770, guid: 31039f486fadca548a1833910c4178b5, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491449188379770, guid: 31039f486fadca548a1833910c4178b5, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491449188379770, guid: 31039f486fadca548a1833910c4178b5, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491449188379770, guid: 31039f486fadca548a1833910c4178b5, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 12.705507
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819810348106374, guid: 31039f486fadca548a1833910c4178b5, type: 2}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819810348106374, guid: 31039f486fadca548a1833910c4178b5, type: 2}
+      propertyPath: m_Name
+      value: wall (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 31039f486fadca548a1833910c4178b5, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1289202225 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1834339821036712, guid: abd3b165a4881ec4e85dcf864ad10f02,
